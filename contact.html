@@ -21,13 +21,34 @@
 
         <div class="main">
             <div class="header">
-                Header
                 <!-- Aqui vai o seu header -->
+                <img src="./image/sala de espera.jpg" alt="" width="300px">
+                
+            
             </div>
     
             <div class="content">
-                Content
                 <!-- Aqui vai o seu conteúdo -->
+                <h2>Formulário de Contato</h2>
+
+                <form action="enviar.php" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone">
+                
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                    <div class="form-buttons">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </form>
             </div>
     
             <div class="footer">
