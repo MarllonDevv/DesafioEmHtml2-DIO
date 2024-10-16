@@ -1,131 +1,171 @@
-html, body {
-    margin: 0;
+html,
+body {
+  margin: 0;
 }
 
 body {
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-    /* background-color: aquamarine; */
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  /* background-color: aquamarine; */
 }
 
 .main {
-    display: flex;
-    flex-flow: column;
-    width: 85%;
+  display: flex;
+  flex-flow: column;
+  width: 85%;
 }
 
 .menu {
-    width: 15%;
-    /* background-color: aqua; */
-    padding: 10px 20px 0px;
+  width: 15%;
+  /* background-color: aqua; */
+  padding: 10px 20px 0px;
 }
 
 .header {
-    /* background-color: rgb(5, 108, 108); */
-    min-height: 150px;
-    position: relative;
+  /* background-color: rgb(5, 108, 108); */
+  min-height: 150px;
+  position: relative;
 }
 
 .header img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .content {
-    /* background-color: white; */
-    min-height: 300px;
-    padding: 20px;
+  /* background-color: white; */
+  min-height: 300px;
+  padding: 20px;
 }
 
 .footer {
-    /* background-color: rgb(99, 56, 240); */
-    min-height: 150px;
+  /* background-color: rgb(99, 56, 240); */
+  min-height: 150px;
 }
 
 /* Estilo do formulário */
 form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo dos rótulos */
 label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 /* Estilo dos campos de entrada de texto e email */
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 /* Estilo para o campo de mensagem (textarea) */
 textarea {
-    resize: vertical;
-    min-height: 120px;
+  resize: vertical;
+  min-height: 120px;
 }
 
 /* Estilo para os botões de envio e limpar */
 .form-buttons {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Estilo para os botões */
-input[type="submit"], input[type="reset"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 48%;
-    text-align: center;
+input[type="submit"],
+input[type="reset"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 48%;
+  text-align: center;
 }
 
 /* Estilo ao passar o mouse sobre os botões */
-input[type="submit"]:hover, input[type="reset"]:hover {
-    background-color: #45a049;
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #45a049;
 }
 
 /* Estilo para melhorar a aparência em dispositivos móveis */
 @media (max-width: 600px) {
-    form {
-        padding: 15px;
-    }
+  form {
+    padding: 15px;
+  }
 
-    input[type="submit"], input[type="reset"] {
-        font-size: 14px;
-        width: 100%;
-        margin-bottom: 10px;
-    }
+  input[type="submit"],
+  input[type="reset"] {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
-    .form-buttons {
-        flex-direction: column;
-    }
+  .form-buttons {
+    flex-direction: column;
+  }
 }
 
+/* Estilos para os links no menu principal */
+.menu ul {
+  list-style-type: none; /* Remove as bolinhas da lista */
+  padding: 0;
+  margin: 0;
+}
 
+.menu ul li {
+  margin-bottom: 10px;
+}
+
+.menu ul li a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: #333; /* Cor neutra para o texto */
+  font-size: 16px; /* Tamanho da fonte ajustado */
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse */
+.menu ul li a:hover {
+  background-color: #4caf50; /* Cor de fundo ao passar o mouse */
+  color: white; /* Cor do texto ao passar o mouse */
+}
+
+.clinic-name {
+  position: absolute;
+  bottom: 20px; /* Distância do fundo da imagem */
+  left: 20px; /* Distância da esquerda */
+  color: white; /* Cor do texto */
+  font-size: 36px; /* Tamanho da fonte */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para melhorar a legibilidade */
+}

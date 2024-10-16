@@ -1,61 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="menu">
-            <!-- Aqui vai o seu menu -->
-            <ul>
-                <li><a href="./index.html">Home Page</a></li>
-                <li><a href="./about.html">Abount</a></li>
-                <li><a href="./openinghours.html">Opeeninghours </a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+      <div class="menu">
+        <!-- Aqui vai o seu menu -->
+        <ul>
+          <li><a href="./index.html">Home Page</a></li>
+          <li><a href="./about.html">Abount</a></li>
+          <li><a href="./openinghours.html">Opeeninghours </a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="header">
+          <!-- Aqui vai o seu header -->
+          <img src="./image/sala de espera.jpg" alt="" width="300px" />
+          <h1 class="clinic-name">Clínica Fictícia</h1>
         </div>
 
-        <div class="main">
-            <div class="header">
-                <!-- Aqui vai o seu header -->
-                <img src="./image/sala de espera.jpg" alt="" width="300px">
-                
-            
-            </div>
-    
-            <div class="content">
-                <!-- Aqui vai o seu conteúdo -->
-                <h2>Formulário de Contato</h2>
+        <div class="content">
+          <!-- Aqui vai o seu conteúdo -->
+          <h2>Formulário de Contato</h2>
 
-                <form action="enviar.php" method="post">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-                
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                
-                    <label for="telefone">Telefone:</label>
-                    <input type="text" id="telefone" name="telefone">
-                
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                
-                    <div class="form-buttons">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar">
-                    </div>
-                </form>
+          <form action="enviar.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" />
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              required
+            ></textarea>
+
+            <div class="form-buttons">
+              <input type="submit" value="Enviar" />
+              <input type="reset" value="Limpar" />
             </div>
-    
-            <div class="footer">
-                Footer
-                <!-- Aqui vai o seu rodapé -->
-            </div>
+          </form>
         </div>
+
+        <div class="footer">
+          <!-- Aqui vai o seu rodapé -->
+          <footer>
+            <div>
+              <!-- Informações de contato -->
+              <div>
+                <h3>Clínica Fictícia</h3>
+                <p>
+                  Endereço: Rua da Saúde, 123 - Bairro Central, Cidade
+                  Imaginária
+                </p>
+                <p>Telefone: (99) 9999-9999</p>
+                <p>Email: contato@clinicaficticia.com</p>
+              </div>
+              <div>
+                <p>Facebook | Instagram | LinkedIn | Twitter</p>
+              </div>
+              <div>
+                <p>
+                  &copy; 2024 Clínica Fictícia. Todos os direitos reservados.
+                </p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
